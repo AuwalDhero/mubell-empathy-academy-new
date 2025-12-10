@@ -35,11 +35,8 @@ const About: React.FC = () => {
           </div>
           <div className="order-1 lg:order-2">
             <div className="aspect-square rounded-2xl overflow-hidden relative border border-white/5">
-            <img 
-                src="public/media/trusted1.jpg"  // Assumes you uploaded 'bello-musa.jpg' to public/media/
-                alt="Bello Musa (Sodium)" 
-                className="w-full h-full object-cover"
-              />
+            <img src="./media/musa.jpg" alt="Musa" />
+
                <div className="absolute inset-0 bg-gradient-to-t from-brand-darker via-transparent to-transparent"></div>
             </div>
           </div>
