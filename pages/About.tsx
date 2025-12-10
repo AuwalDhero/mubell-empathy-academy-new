@@ -17,27 +17,29 @@ const About: React.FC = () => {
       <section className="container mx-auto px-6 md:px-12 mb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
-             <div className="space-y-6 text-brand-muted leading-relaxed">
-               <p className="text-lg text-white font-serif">
-                 "Technology can analyze emotions; only humans can transform them."
-               </p>
-               <p>
-                 At Mubell Empathy Academy, we deliver practical emotional mastery tools rooted in neuroscience, trauma-informed practices, psychological self-awareness, empathy, and relational intelligence.
-               </p>
-               <p>
-                 We help individuals stop people-pleasing and start living with emotional authority. Our mission is to make emotional intelligence the most valuable currency in a world overflowing with information.
-               </p>
-               <div className="p-6 bg-brand-accent/5 rounded-xl border-l-4 border-brand-accent my-6">
-                 <h4 className="text-white font-serif mb-2">Who We Serve</h4>
-                 <p className="text-sm">Individuals, Couples, Leaders, Parents, and Working Professionals seeking deeper clarity and control.</p>
-               </div>
-             </div>
+            <div className="space-y-6 text-brand-muted leading-relaxed">
+              <p className="text-lg text-white font-serif">
+                "Technology can analyze emotions; only humans can transform them."
+              </p>
+              <p>
+                At Mubell Empathy Academy, we deliver practical emotional mastery tools rooted in neuroscience, trauma-informed practices, psychological self-awareness, empathy, and relational intelligence.
+              </p>
+              <p>
+                We help individuals stop people-pleasing and start living with emotional authority. Our mission is to make emotional intelligence the most valuable currency in a world overflowing with information.
+              </p>
+              <div className="p-6 bg-brand-accent/5 rounded-xl border-l-4 border-brand-accent my-6">
+                <h4 className="text-white font-serif mb-2">Who We Serve</h4>
+                <p className="text-sm">Individuals, Couples, Leaders, Parents, and Working Professionals seeking deeper clarity and control.</p>
+              </div>
+            </div>
           </div>
           <div className="order-1 lg:order-2">
             <div className="aspect-square rounded-2xl overflow-hidden relative border border-white/5">
-            <img src="./media/musa.jpg" alt="Musa" />
-
-               <div className="absolute inset-0 bg-gradient-to-t from-brand-darker via-transparent to-transparent"></div>
+              <img
+                src={`${import.meta.env.BASE_URL}media/musa.jpg`}
+                alt="Musa"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-darker via-transparent to-transparent"></div>
             </div>
           </div>
         </div>
@@ -74,9 +76,9 @@ const About: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16 bg-brand-darker rounded-3xl p-8 md:p-12 border border-white/5">
           <div className="w-full lg:w-2/5">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative">
-            <img 
-                src="public/media/musa.jpg"  // Assumes you uploaded 'bello-musa.jpg' to public/media/
-                alt="Bello Musa (Sodium)" 
+              <img
+                src={`${import.meta.env.BASE_URL}media/musa.jpg`}
+                alt="Bello Musa (Sodium)"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-brand-accent/10 mix-blend-overlay"></div>
