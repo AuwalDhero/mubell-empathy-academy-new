@@ -27,7 +27,7 @@ const About: React.FC = () => {
       {/* MISSION & ESSENCE */}
       <section className="container mx-auto px-6 md:px-12 mb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* TEXT */}
           <div className="order-2 lg:order-1">
             <div className="space-y-6 text-brand-muted leading-relaxed">
@@ -64,7 +64,7 @@ const About: React.FC = () => {
           <div className="order-1 lg:order-2">
             <div className="aspect-square rounded-2xl overflow-hidden relative border border-white/5">
               <img
-                src="/media/trusted1.jpg"
+                src="/mubell-Acadamy/media/trusted1.jpg"
                 alt="Trusted Profile"
                 className="w-full h-full object-cover"
               />
@@ -140,7 +140,11 @@ const About: React.FC = () => {
           {/* IMAGE */}
           <div className="w-full lg:w-2/5">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative">
-              <img src="/media/musa.jpg" alt="Musa" className="w-full h-full object-cover" />
+              <img
+                src="/mubell-Acadamy/media/musa.jpg"
+                alt="Musa"
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-brand-accent/10 mix-blend-overlay"></div>
             </div>
           </div>
