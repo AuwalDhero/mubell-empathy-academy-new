@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Brain, Wind, Activity } from 'lucide-react';
+import { ArrowRight, Brain, Wind, Activity, ShoppingBag, Star } from 'lucide-react';
 import Button from '../components/Button';
 import { SERVICES, TESTIMONIALS, TRUSTED_BY } from '../constants';
 import { Link } from 'react-router-dom';
@@ -8,32 +8,94 @@ const Home: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <section className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-accent/5 to-transparent pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="max-w-3xl">
-            <span className="inline-block py-1 px-3 rounded-full bg-brand-accent/10 text-brand-accent text-xs font-semibold tracking-widest uppercase mb-6">
-              Welcome to the Academy
-            </span>
-            <h1 className="text-5xl md:text-7xl font-serif text-white leading-tight mb-8">
-              Emotional Intelligence Is Not a Luxury.<br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white">It Is Life.</span>
-            </h1>
-            <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-2xl">
-              Become the calm, confident, emotionally grounded leader your world needs. 
-              We bridge the gap between thinking and feeling for high-performers, partners, and parents.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button to="/programs" variant="primary">
-                Explore Programs
-              </Button>
-              <Button to="/audit" variant="outline">
-                Take EI Audit
-              </Button>
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            
+            {/* LEFT COLUMN: Main Text */}
+            <div className="lg:w-1/2">
+              <span className="inline-block py-1 px-3 rounded-full bg-brand-accent/10 text-brand-accent text-xs font-semibold tracking-widest uppercase mb-6">
+                Welcome to the Academy
+              </span>
+              <h1 className="text-5xl md:text-7xl font-serif text-white leading-tight mb-8">
+                Emotional Intelligence Is Not a Luxury.<br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white">It Is Life.</span>
+              </h1>
+              <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-2xl">
+                Become the calm, confident, emotionally grounded leader your world needs. 
+                We bridge the gap between thinking and feeling for high-performers, partners, and parents.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button to="/programs" variant="primary">
+                  Explore Programs
+                </Button>
+                <Button to="/audit" variant="outline">
+                  Take EI Audit
+                </Button>
+              </div>
             </div>
+
+            {/* RIGHT COLUMN: Book Promotion */}
+            <div className="lg:w-1/2 w-full flex justify-center lg:justify-end">
+              <div className="relative group max-w-md w-full">
+                {/* Glow Effect behind the card */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-brand-accent/20 to-purple-500/20 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                
+                <div className="relative bg-brand-darker/80 backdrop-blur-xl border border-white/10 p-8 rounded-2xl">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="flex text-yellow-400">
+                      {[1, 2, 3, 4, 5].map(i => <Star key={i} size={14} fill="currentColor" />)}
+                    </span>
+                    <span className="text-xs font-bold tracking-widest text-brand-accent uppercase">Best Selling Author</span>
+                  </div>
+
+                  <div className="flex gap-6">
+                    {/* --- BOOK IMAGE START --- */}
+                    <div className="relative w-32 h-48 rounded-lg shadow-2xl border border-white/10 overflow-hidden shrink-0 transform -rotate-2 group-hover:rotate-0 transition-transform duration-300">
+                       {/* IMPORTANT: 
+                          1. Ensure your image file is at: public/media/book.jpg
+                          2. If your file is a PNG, change .jpg to .png below.
+                       */}
+                       <img 
+                         src="/mubell-Acadamy/media/book.png" 
+                         alt="Emotional Intelligence Guide by Coach Musa"
+                         className="w-full h-full object-cover"
+                       />
+                       {/* Optional: Shine effect over the image */}
+                       <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    </div>
+                    {/* --- BOOK IMAGE END --- */}
+
+                    <div className="flex flex-col justify-center">
+                       <h3 className="text-xl font-serif text-white mb-2">
+                         Daily Emotional Bliss
+                       </h3>
+                       <p className="text-sm text-brand-muted mb-1">
+                         By Lead Coach Musa Bello (Sodium)
+                       </p>
+                       <p className="text-xs text-brand-muted/60 mb-6 leading-relaxed">
+                         The definitive handbook for navigating modern emotional landscapes and mastering self-regulation.
+                       </p>
+                       
+                       <a 
+                         href="https://selar.com/2tqv" 
+                         target="_blank" 
+                         rel="noopener noreferrer"
+                         className="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-white transition-colors"
+                       >
+                         <ShoppingBag size={16} />
+                         Purchase on Selar
+                       </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
         
@@ -43,16 +105,26 @@ const Home: React.FC = () => {
         </div>
       </section>
       
-      {/* Trusted By Section */}
-      <section className="py-12 border-b border-white/5 bg-brand-darker">
+      {/* Trusted By Section - ENHANCED FOR VISIBILITY */}
+      <section className="py-12 bg-brand-darker">
         <div className="container mx-auto px-6 md:px-12">
-          <p className="text-center text-brand-muted text-sm uppercase tracking-widest mb-8">Trusted by Organizations Including</p>
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-70">
-            {TRUSTED_BY.map((org, index) => (
-              <span key={index} className="text-white/60 font-serif font-medium text-lg text-center hover:text-white transition-colors">
-                {org}
-              </span>
-            ))}
+          <div className="p-8 md:p-12 border border-white/10 rounded-2xl bg-white/5 text-center shadow-xl">
+            {/* Enhanced Title */}
+            <h3 className="text-sm uppercase tracking-widest font-semibold text-brand-accent mb-8">
+              Trusted by Forward-Thinking Organizations
+            </h3>
+            
+            {/* Logo Wall Style Grid */}
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 max-w-6xl mx-auto">
+              {TRUSTED_BY.map((org, index) => (
+                <span 
+                  key={index} 
+                  className="text-white text-lg md:text-xl font-medium opacity-80 hover:opacity-100 transition-opacity whitespace-nowrap"
+                >
+                  {org}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -127,9 +199,9 @@ const Home: React.FC = () => {
           
           <div className="mt-8 md:hidden text-center">
              <Link to="/programs" className="inline-flex items-center gap-2 text-brand-accent hover:text-white transition-colors">
-              View All Programs <ArrowRight size={16} />
-            </Link>
-          </div>
+               View All Programs <ArrowRight size={16} />
+             </Link>
+           </div>
         </div>
       </section>
       
@@ -140,10 +212,10 @@ const Home: React.FC = () => {
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
              {TESTIMONIALS.map((t) => (
                <div key={t.id} className="bg-white/5 p-8 rounded-2xl relative">
-                  <div className="text-brand-accent opacity-30 absolute top-4 left-4">
-                     <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                       <path d="M14.017 21L14.017 18C14.017 16.896 14.913 16 16.017 16H19.017C19.569 16 20.017 15.552 20.017 15V9C20.017 8.448 19.569 8 19.017 8H15.017C14.465 8 14.017 8.448 14.017 9V11C14.017 11.552 13.569 12 13.017 12H12.017V5H22.017V15C22.017 18.314 19.331 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.896 5.91297 16 7.01697 16H10.017C10.569 16 11.017 15.552 11.017 15V9C11.017 8.448 10.569 8 10.017 8H6.01697C5.46497 8 5.01697 8.448 5.01697 9V11C5.01697 11.552 4.56897 12 4.01697 12H3.01697V5H13.017V15C13.017 18.314 10.331 21 7.01697 21H5.01697Z" />
-                     </svg>
+                 <div className="text-brand-accent opacity-30 absolute top-4 left-4">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                     <path d="M14.017 21L14.017 18C14.017 16.896 14.913 16 16.017 16H19.017C19.569 16 20.017 15.552 20.017 15V9C20.017 8.448 19.569 8 19.017 8H15.017C14.465 8 14.017 8.448 14.017 9V11C14.017 11.552 13.569 12 13.017 12H12.017V5H22.017V15C22.017 18.314 19.331 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.896 5.91297 16 7.01697 16H10.017C10.569 16 11.017 15.552 11.017 15V9C11.017 8.448 10.569 8 10.017 8H6.01697C5.46497 8 5.01697 8.448 5.01697 9V11C5.01697 11.552 4.56897 12 4.01697 12H3.01697V5H13.017V15C13.017 18.314 10.331 21 7.01697 21H5.01697Z" />
+                    </svg>
                   </div>
                   <p className="text-brand-muted text-sm italic leading-relaxed mb-6 pt-6">"{t.quote}"</p>
                   <div className="mt-auto">
@@ -158,27 +230,28 @@ const Home: React.FC = () => {
 
       {/* CTA */}
       <section className="py-20">
-         <div className="container mx-auto px-6 md:px-12">
-            <div className="bg-brand-accent rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
-               {/* Pattern overlay */}
-               <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-multiply"></div>
-               
-               <div className="relative z-10">
-                 <h2 className="text-3xl md:text-5xl font-serif text-brand-darker mb-6">Ready to Rewrite Your Emotional Script?</h2>
-                 <p className="text-brand-darker/80 text-lg mb-8 max-w-2xl mx-auto">
-                   Book your free 15-minute discovery call. No pressure, just a conversation.
-                 </p>
-                 <a 
-                   href="https://wa.me/2348025776657" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   className="inline-flex items-center justify-center px-8 py-4 rounded-full font-medium transition-all duration-300 text-base tracking-wide bg-brand-darker text-white hover:bg-white hover:text-brand-darker shadow-2xl"
-                 >
-                   Message Us on WhatsApp
-                 </a>
-               </div>
-            </div>
-         </div>
+          <div className="container mx-auto px-6 md:px-12">
+             <div className="bg-brand-accent rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
+                {/* Pattern overlay */}
+                <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-multiply"></div>
+                
+                <div className="relative z-10">
+                  <h2 className="text-3xl md:text-5xl font-serif text-brand-darker mb-6">Ready to Rewrite Your Emotional Script?</h2>
+                  <p className="text-brand-darker/80 text-lg mb-8 max-w-2xl mx-auto">
+                    Book your free 15-minute discovery call. No pressure, just a conversation.
+                  </p>
+                  {/* CORRECTION: Replaced the <a> tag with the custom <Button> component,
+                     using the 'to' prop for internal routing to /contact. */}
+                  <Button 
+                    to="/contact" 
+                    variant="primary" 
+                    className="py-4 text-base tracking-wide bg-brand-darker text-white hover:bg-white hover:text-brand-darker shadow-2xl"
+                  >
+                    Book a Discovery Call
+                  </Button>
+                </div>
+             </div>
+          </div>
       </section>
     </>
   );

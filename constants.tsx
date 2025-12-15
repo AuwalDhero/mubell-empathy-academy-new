@@ -59,154 +59,103 @@ export const TESTIMONIALS: Testimonial[] = [
   }
 ];
 
-export const EVENTS: EventItem[] = [
-  {
-    id: 'e1',
-    title: 'The Calm Leader Workshop',
-    date: 'October 15, 2023',
-    description: 'A half-day immersion into emotional regulation for high-stakes environments.',
-    location: 'Online via Zoom'
-  },
-  {
-    id: 'e2',
-    title: 'Reconnecting: Couples Retreat',
-    date: 'November 5-7, 2023',
-    description: 'A weekend getaway focused on rebuilding emotional intimacy.',
-    location: 'Austin, TX'
-  }
+
+export const TRUSTED_BY: string[] = [
+"Federal Road Safety Corps (FRSC)",
+"National Youth Service Corps",
+"Ministry Of Interior",
+"Central Emirate International Academy Abuja.", 
+"Alfaizun Academy Abuja",
+"HENAM synergy Ltd",
+"NIRSAL"
 ];
 
 export const PROGRAMS: Program[] = [
   {
-    id: 'leaders',
-    title: 'Emotional Intelligence for Leaders',
-    shortSummary: 'Master emotional control, build presence, and lead with confidence.',
+    id: 'ei-mastery',
+    title: 'Emotional Intelligence Mastery',
+    shortSummary: 'A 12-week deep dive into self-awareness, self-regulation, and relational mastery.',
     description: [
-      'Leadership is not just about strategy; it is about state management. Our program helps leaders navigate high-pressure environments without losing their cool.',
-      'We focus on the psychology of influence and the neuroscience of decision-making under stress.'
+      'This signature program is designed for high-performers ready to bridge the gap between their professional success and personal fulfillment. We use neuro-linguistic programming (NLP) and trauma-informed techniques to rewire your emotional responses.',
+      'You will gain precise control over your internal state, allowing you to show up consistently as the calm, confident, and empathetic person you aspire to be in every area of your life.'
     ],
     benefits: [
-      'Master emotional control',
-      'Build strong presence',
-      'Reduce stress & burnout',
-      'Communicate with impact',
-      'Lead with confidence',
-      'Improve decision-making'
+      'Master self-regulation under pressure',
+      'Eliminate the "overthinking loop"',
+      'Build deep, conflict-resilient relationships',
+      'Develop powerful, empathetic leadership skills'
     ]
   },
   {
-    id: 'couples-singles',
-    title: 'Emotional Intelligence for Couples & Singles',
-    shortSummary: 'Heal triggers, break negative cycles, and deepen intimacy.',
+    id: 'conscious-parenting',
+    title: 'The Conscious Parent Pathway',
+    shortSummary: 'Move from reactive to responsive parenting and raise emotionally grounded children.',
     description: [
-      'Relationships fail because of emotional ignorance. Love is not enough; you need the skills to navigate conflict and connection.',
-      'This program bridges the gap between intention and impact in your romantic life.'
+      'This program helps parents understand their own emotional triggers to create a safe, nurturing environment for their children. It’s about breaking generational trauma cycles and teaching your children emotional literacy by modeling it.',
+      'Learn powerful techniques to handle tantrums, navigate adolescence, and foster a lifelong bond built on mutual respect and genuine emotional connection.'
     ],
     benefits: [
-      'Communicate calmly',
-      'Heal emotional triggers',
-      'Build emotional safety',
-      'Break negative cycles',
-      'Deepen intimacy'
+      'Identify and manage parental triggers',
+      'Teach children emotional literacy (naming feelings)',
+      'Reduce conflict and power struggles',
+      'Create a home of psychological safety'
     ]
   },
   {
-    id: 'parents',
-    title: 'Emotional Intelligence for Parents',
-    shortSummary: 'Raise resilient children by moving from reaction to response.',
+    id: 'couples-connect',
+    title: 'The Couples Connection Blueprint',
+    shortSummary: 'A program for couples seeking to deepen intimacy and resolve core conflicts with empathy.',
     description: [
-      'Parenting is the ultimate test of emotional regulation. We help you break generational patterns and parent from a place of wholeness rather than wounds.',
-      'Learn to validate your child’s emotions without compromising boundaries.'
+      'Relationship success is not about finding the right person, but about developing the right emotional communication skills. This program provides a clear blueprint for navigating differences without resentment.',
+      'We focus on active listening, validation, and vulnerability to ensure both partners feel deeply heard, understood, and cherished.'
     ],
     benefits: [
-      'Stay calm under pressure',
-      'Reduce shouting and reactivity',
-      'Teach emotional vocabulary',
-      'Discipline without damage',
-      'Raise resilient, emotionally intelligent children'
-    ]
-  },
-  {
-    id: 'trauma-healing',
-    title: 'Trauma-Informed Emotional Healing',
-    shortSummary: 'Heal emotional wounds and build lasting resilience.',
-    description: [
-      'You are not broken. You are just patterned. This program uses trauma-informed protocols to help you release stored pain and reclaim your emotional freedom.',
-      'We move beyond talk therapy into somatic and emotional release.'
-    ],
-    benefits: [
-      'Heal emotional wounds',
-      'Break old patterns',
-      'Regulate emotions',
-      'Overcome fear, anger, shame, anxiety',
-      'Build emotional resilience'
-    ]
-  },
-  {
-    id: 'corporate',
-    title: 'Corporate Emotional Intelligence Training',
-    shortSummary: 'Enhance leadership competence and build emotionally intelligent workplaces.',
-    description: [
-      'Emotions drive behavior, and behavior drives performance. We help organizations create cultures where psychological safety fuels innovation.',
-      'Stop the drain of drama and conflict in your workforce.'
-    ],
-    benefits: [
-      'Improve communication',
-      'Reduce conflict',
-      'Increase productivity',
-      'Enhance leadership competence',
-      'Build emotionally intelligent workplaces'
+      'Establish healthy, clear communication patterns',
+      'Resolve conflicts without emotional damage',
+      'Rebuild and deepen trust',
+      'Increase emotional and physical intimacy'
     ]
   }
-];
-
-export const TRUSTED_BY = [
-  "Federal Road Safety Corps (FRSC)",
-  "National Youth Service Corps (NYSC)",
-  "Ministry of Interior",
-  "Central Emirate International Academy Abuja",
-  "Alfaizun Academy Abuja",
-  "HENAM Synergy Ltd",
-  "NIRSAL"
 ];
 
 export const MEDIA_LINKS: MediaItem[] = [
   {
-    id: 'interview-national-tribune',
-    title: 'Exclusive Interview',
-    source: 'National Tribune',
-    url: 'https://www.nationaltribune.ng/exclusive-interview-with-sodium-ceo-of-mubell-empathy-academy/',
-    type: 'article'
+    id: '1',
+    type: 'podcast',
+    title: 'The Power of Pausing: A Neuroscience Approach to EI',
+    source: 'The Growth Mindset Podcast',
+    url: 'https://spotify.com/podcast-link-1'
   },
   {
-    id: 'interview-nairaday',
-    title: 'Exclusive Interview',
-    source: 'NairaDay',
-    url: 'https://nairaday.ng/exclusive-interview-with-sodium-ceo-of-mubell-empathy-academy/',
-    type: 'article'
+    id: '2',
+    type: 'video',
+    title: 'Why High-Performers Struggle with Intimacy',
+    source: 'TEDx Talk',
+    url: 'https://youtube.com/video-link-2'
   },
   {
-    id: 'youtube-1',
-    title: 'YouTube Interview 1',
-    source: 'YouTube',
-    url: 'https://youtu.be/HJkTVjbn4Z8?si=qGgP_96dX_W9-ygQ',
-    type: 'video'
+    id: '3',
+    type: 'article',
+    title: 'Emotional Regulation Techniques for the Modern Leader',
+    source: 'Forbes',
+    url: 'https://forbes.com/article-link-3'
   },
   {
-    id: 'youtube-2',
-    title: 'YouTube Interview 2',
-    source: 'YouTube',
-    url: 'https://www.youtube.com/watch?v=hlLk6T9dcQM',
-    type: 'video'
+    id: '4',
+    type: 'podcast',
+    title: 'The Empathy Gap: What AI Can\'t Teach You',
+    source: 'Future of Humanity Show',
+    url: 'https://applepodcasts.com/podcast-link-4'
   },
-  {
-    id: 'podcast-apple',
-    title: 'How I Ate My Emotions with Bello Musa',
-    source: 'Apple Podcast',
-    url: 'https://podcasts.apple.com/us/podcast/how-i-ate-my-emotions-with-bello-musa-sodium/id1532669134?i=1000674085102',
-    type: 'podcast'
-  }
 ];
+
+// --- NEW CONSTANT FOR BLOG CTA ---
+export const BLOG_CTA = {
+  title: "The Emotional Edge: Deep Dive into Our Latest Insights",
+  subtitle: "Don't just live—lead with emotional mastery. Read the blog.",
+  link: "https://your-academy-blog-link.com", // *** UPDATE THIS WITH YOUR ACTUAL BLOG LINK ***
+  buttonText: "Read the Latest Article",
+};
 
 export const AUDIT_SECTIONS: AuditSection[] = [
   {
