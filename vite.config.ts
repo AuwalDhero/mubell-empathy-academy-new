@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
     },
 
     // GitHub Pages base URL
-    base: '/mubell-Acadamy/',
+    base: '/mubell-empathy-academy-new/',
 
     plugins: [react()],
 
