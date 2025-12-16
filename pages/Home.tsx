@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                           2. If your file is a PNG, change .jpg to .png below.
                        */}
                        <img 
-                         src="/mubell-Acadamy/media/book.png" 
+                         src="/mubell-empathy-academy-new/media/book.png" 
                          alt="Emotional Intelligence Guide by Coach Musa"
                          className="w-full h-full object-cover"
                        />

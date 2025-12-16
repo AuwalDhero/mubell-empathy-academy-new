@@ -64,7 +64,7 @@ const About: React.FC = () => {
           <div className="order-1 lg:order-2">
             <div className="aspect-square rounded-2xl overflow-hidden relative border border-white/5">
               <img
-                src="/mubell-Acadamy/media/trusted1.jpg"
+                src="/mubell-empathy-academy-new/media/trusted1.jpg"
                 alt="Trusted Profile"
                 className="w-full h-full object-cover"
               />
@@ -141,7 +141,7 @@ const About: React.FC = () => {
           <div className="w-full lg:w-2/5">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative">
               <img
-                src="/mubell-Acadamy/media/musa.jpg"
+                src="/mubell-empathy-academy-new/media/musa.jpg"
                 alt="Musa"
                 className="w-full h-full object-cover"
               />
