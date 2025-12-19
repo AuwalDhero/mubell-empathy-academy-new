@@ -122,38 +122,47 @@ export const MEDIA_LINKS: MediaItem[] = [
   {
     id: '1',
     type: 'podcast',
-    title: 'The Power of Pausing: A Neuroscience Approach to EI',
+    title: 'Why Empathy Builds',
     source: 'The Growth Mindset Podcast',
-    url: 'https://spotify.com/podcast-link-1'
+    url: 'https://www.youtube.com/watch?v=hlLk6T9dcQM'
   },
   {
     id: '2',
     type: 'video',
-    title: 'Why High-Performers Struggle with Intimacy',
-    source: 'TEDx Talk',
-    url: 'https://youtube.com/video-link-2'
+    title: 'EMOTIONAL INTELLIGENCE  AND COMPASSIONATE  LEADERSHIP',
+    source: 'GOOD MORNING NIGERA NTA',
+    url: 'https://www.youtube.com/watch?v=HJkTVjbn4Z8'
   },
   {
     id: '3',
     type: 'article',
     title: 'Emotional Regulation Techniques for the Modern Leader',
-    source: 'Forbes',
-    url: 'https://forbes.com/article-link-3'
+    source: 'NairaDay',
+    url: 'https://nairaday.ng/exclusive-interview-with-sodium-ceo-of-mubell-empathy-academy/'
   },
   {
     id: '4',
     type: 'podcast',
-    title: 'The Empathy Gap: What AI Can\'t Teach You',
-    source: 'Future of Humanity Show',
-    url: 'https://applepodcasts.com/podcast-link-4'
+    title: 'How I ATE My Emotions with Bello Musa',
+    source: 'Stretch Street Podcast',
+    url: 'https://podcasts.apple.com/us/podcast/how-i-ate-my-emotions-with-bello-musa-sodium/id1532669134?i=1000674085102'
   },
 ];
+// --- NEW CONSTANT FOR Scocial media ---
+export const SOCIAL_LINKS = {
+  facebook: 'https://www.facebook.com/mubellempathyacademy',
+  instagram: 'https://www.instagram.com/mubellempathyacademy',
+  twitter: 'https://x.com/mubellempathy',
+  linkedin: 'https://www.linkedin.com/company/mubell-empathy-academy',
+  youtube: 'https://www.youtube.com/@mubellempathyacademy'
+};
+
 
 // --- NEW CONSTANT FOR BLOG CTA ---
 export const BLOG_CTA = {
   title: "The Emotional Edge: Deep Dive into Our Latest Insights",
   subtitle: "Don't just live—lead with emotional mastery. Read the blog.",
-  link: "https://your-academy-blog-link.com", // *** UPDATE THIS WITH YOUR ACTUAL BLOG LINK ***
+  link: "https://www.nationaltribune.ng/exclusive-interview-with-sodium-ceo-of-mubell-empathy-academy/", // *** UPDATE THIS WITH YOUR ACTUAL BLOG LINK ***
   buttonText: "Read the Latest Article",
 };
 
