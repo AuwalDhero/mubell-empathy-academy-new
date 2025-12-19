@@ -1,9 +1,9 @@
-import path from 'path'; 
+import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, '.', '')
+  const env = loadEnv(mode, '.', '');
 
   return {
     server: {
@@ -11,13 +11,14 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0',
     },
 
-    // GitHub Pages base URL
-    base: '/mubell-empathy-academy-new/',
+    // Base path: Render uses "/", GitHub Pages uses repo name
+    base: process.env.RENDER
+      ? '/'
+      : '/mubell-empathy-academy-new/',
 
     plugins: [react()],
 
     define: {
-      // It's best to include both, just in case
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
@@ -27,5 +28,5 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, '.'),
       },
     },
-  }; // Make sure this semicolon and closing brace are correct
+  };
 });
